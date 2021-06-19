@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header > p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.calc-btns {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.input-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: black;
+  color: white;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  width: 100%;
+  height: 80px;
+  background: rgb(236, 236, 236);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  background: orange;
+  color: white;
+}
+
+.btn:last-child:hover {
+  background: rgba(179, 179, 179, 0.5);
+  color: black;
+}
+
+.btn:last-child:active {
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.btn-double {
+  width: 50%;
+}
+
+.btn-half {
+  width: 25%;
+}
+
+.btn-tripple {
+  width: 75%;
+}
+
+.btn:hover {
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.btn:active {
+  background: rgb(0, 0, 0, 0.5);
+}
+
+
+
+@media(max-width: 768px) {
+  .calculator {
+    max-width: 300px;
+  }
+}
